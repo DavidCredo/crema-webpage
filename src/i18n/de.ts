@@ -49,7 +49,7 @@ export default {
   // Landing – Notify
   "notify.heading": "Sei unter den Ersten.",
   "notify.text":
-    "Ich rolle Crema zunächst an eine kleine Gruppe Espresso-Nerds via TestFlight aus. Schreib mir und ich melde mich, wenn di dram nost.",
+    "Ich rolle Crema zunächst an eine kleine Gruppe Espresso-Nerds via TestFlight aus. Schreib mir und ich melde mich, wenn du dran bist.",
   "notify.cta": "TestFlight-Zugang anfragen",
   "notify.disclaimer": "Kein Spam. Nur eine einmalige Einladung, wenn die App soweit ist.",
 
