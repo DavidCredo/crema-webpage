@@ -10,7 +10,7 @@ export const defaultLang = "en" as const;
 
 type Locale = keyof typeof languages;
 
-const translations: Record<Locale, typeof en> = { en, de };
+const translations: Record<Locale, typeof en | typeof de> = { en, de };
 
 /**
  * Detect locale from the current URL pathname.
