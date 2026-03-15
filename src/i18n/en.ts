@@ -40,18 +40,18 @@ export default {
   "privacy_callout.heading": "Your data stays on your device.",
   "privacy_callout.text":
     "No accounts. No ads. Crema stores everything locally,\nso your brew history never leaves your phone.",
-  "privacy_callout.telemetry_prefix": "We use ",
+  "privacy_callout.telemetry_prefix": "I use ",
   "privacy_callout.telemetry_link": "TelemetryDeck",
   "privacy_callout.telemetry_suffix":
     " for anonymous, privacy-friendly analytics — no personal data is ever collected.",
-  "privacy_callout.policy_link": "Read our privacy policy →",
+  "privacy_callout.policy_link": "Read the privacy policy →",
 
   // Landing – Notify
   "notify.heading": "Be first to try Crema.",
   "notify.text":
-    "We're rolling out to a small group of espresso nerds via TestFlight. Drop your email and we'll let you know when it's your turn.",
+    "I'm rolling out to a small group of espresso nerds via TestFlight. Drop your email and I'll let you know when it's your turn.",
   "notify.cta": "Request TestFlight access",
-  "notify.disclaimer": "No spam. Just a one-time invite when we're ready.",
+  "notify.disclaimer": "No spam. Just a one-time invite when I'm ready.",
 
   // Support page
   "support.title": "Support — Crema",
@@ -64,7 +64,7 @@ export default {
   "support.faq.heading": "Common questions",
   "support.faq.data_storage.q": "Where is my data stored?",
   "support.faq.data_storage.a":
-    "Everything lives on your device. Crema uses Apple's SwiftData for local storage. Your brew history is yours. We are working on an opt-in CloudKit-sync feature though!",
+    "Everything lives on your device. Crema uses Apple's SwiftData for local storage. Your brew history is yours. I'm working on an opt-in CloudKit-sync feature though!",
   "support.faq.export.q": "Can I export my data?",
   "support.faq.export.a":
     "Yes! Navigate to the Settings page of Crema and hit the export button. This will create a JSON file with all your beans and brews. Exports have a .crema file extension which makes the import process easier. If you want to import your data somewhere else, just change it to .json, which is a well supported file format.",
@@ -86,22 +86,22 @@ export default {
 
   "privacy.short.heading": "The short version",
   "privacy.short.text":
-    "Crema is a coffee tracking app that stores all your data locally on your device. We don't have accounts, we don't sync to any cloud, and we don't collect personal information. We use privacy-friendly analytics to understand how the app is used in aggregate — nothing more. This website is self-hosted in Germany and keeps minimal server logs for security, which are automatically deleted after 7 days.",
+    "Crema is a coffee tracking app that stores all your data locally on your device. There are no accounts, no cloud sync, and no personal information collected. I use privacy-friendly analytics to understand how the app is used in aggregate — nothing more. This website is self-hosted in Germany and keeps minimal server logs for security, which are automatically deleted after 7 days.",
 
-  "privacy.who.heading": "Who we are",
+  "privacy.who.heading": "Who I am",
   "privacy.who.text":
     "The controller pursuant to Art. 4 No. 7 of the General Data Protection Regulation (GDPR) is",
-  "privacy.who.contact_prefix": "You can reach us at ",
+  "privacy.who.contact_prefix": "You can reach me at ",
 
   "privacy.device.heading": "Data stored on your device",
   "privacy.device.text1":
     "All brew logs, bean library entries, grind settings, recipes, and preferences are stored locally on your iPhone using Apple's SwiftData framework. This data never leaves your device unless you explicitly choose to share it (for example, sharing a brew card or recipe with a friend).",
   "privacy.device.text2":
-    "We do not have access to your brew data. If you delete the app, your data is permanently removed.",
+    "I do not have access to your brew data. If you delete the app, your data is permanently removed.",
 
   "privacy.website.heading": "Website",
   "privacy.website.text":
-    "This website is self-hosted on a server located in Germany. When you visit the site, our web server automatically logs certain technical data for security and operational purposes. This includes:",
+    "This website is self-hosted on a server located in Germany. When you visit the site, the web server automatically logs certain technical data for security and operational purposes. This includes:",
   "privacy.website.list.ip":
     "A truncated version of your IP address (the last portion is masked, so your full address is never stored)",
   "privacy.website.list.date": "Date and time of the request",
@@ -110,9 +110,9 @@ export default {
   "privacy.website.list.referrer": "The referring URL (if any)",
   "privacy.website.list.status": "HTTP status code and response size",
   "privacy.website.masking":
-    "Your IP address is partially masked before being written to disk — specifically, the last 16 bits of IPv4 addresses and the last 96 bits of IPv6 addresses are removed. This means your full IP address is never stored on our server.",
+    "Your IP address is partially masked before being written to disk — specifically, the last 16 bits of IPv4 addresses and the last 96 bits of IPv6 addresses are removed. This means your full IP address is never stored on the server.",
   "privacy.website.legal":
-    "This data is processed on the basis of our legitimate interest (Art. 6(1)(f) GDPR) in maintaining the security and availability of our website. Server logs are automatically deleted after 7 days. We do not use cookies, tracking scripts, or any analytics on the website itself.",
+    "This data is processed on the basis of my legitimate interest (Art. 6(1)(f) GDPR) in maintaining the security and availability of this website. Server logs are automatically deleted after 7 days. I do not use cookies, tracking scripts, or any analytics on the website itself.",
 
   "privacy.analytics.heading": "Analytics",
   "privacy.analytics.text":
@@ -121,7 +121,7 @@ export default {
   "privacy.analytics.list.id":
     "An anonymized user identifier that cannot be traced back to you personally",
   "privacy.analytics.list.events":
-    'Basic usage events defined by us (e.g., "app launched", "shot logged")',
+    'Basic usage events defined by me (e.g., "app launched", "shot logged")',
   "privacy.analytics.list.time": "A timestamp rounded to the nearest hour",
   "privacy.analytics.list.device":
     "Device metadata such as iOS version, app version, and device type",
@@ -134,13 +134,13 @@ export default {
 
   "privacy.legal_basis.heading": "Legal basis for processing",
   "privacy.legal_basis.text1":
-    "The analytics data described above is processed on the basis of our legitimate interest (Art. 6(1)(f) GDPR) in understanding how the app is used so we can improve it. We have assessed that this interest does not override your rights and freedoms, given that the data is anonymized, no personal information is collected, and TelemetryDeck is designed to be privacy-preserving by default.",
+    "The analytics data described above is processed on the basis of my legitimate interest (Art. 6(1)(f) GDPR) in understanding how the app is used so I can improve it. I have assessed that this interest does not override your rights and freedoms, given that the data is anonymized, no personal information is collected, and TelemetryDeck is designed to be privacy-preserving by default.",
   "privacy.legal_basis.text2":
-    "Data stored on your device is not processed by us and therefore does not require a legal basis under GDPR.",
+    "Data stored on your device is not processed by me and therefore does not require a legal basis under GDPR.",
 
   "privacy.retention.heading": "Data retention",
   "privacy.retention.text1":
-    "Data stored on your device persists until you delete the app or clear its data manually. We have no access to this data and cannot delete it on your behalf.",
+    "Data stored on your device persists until you delete the app or clear its data manually. I have no access to this data and cannot delete it on your behalf.",
   "privacy.retention.text2_prefix":
     "Analytics data sent to TelemetryDeck is retained in accordance with ",
   "privacy.retention.text2_link": "TelemetryDeck's data retention policy",
@@ -151,33 +151,33 @@ export default {
   "privacy.rights.text1":
     "Under the GDPR, you have the right to access, rectify, erase, restrict, or port your personal data, as well as the right to object to processing. You also have the right not to be subject to automated decision-making.",
   "privacy.rights.text2":
-    "In practice, because all brew data is stored locally on your device, you exercise most of these rights directly — by viewing, editing, or deleting your data within the app, or by deleting the app entirely. We do not hold any personal data on our servers.",
+    "In practice, because all brew data is stored locally on your device, you exercise most of these rights directly — by viewing, editing, or deleting your data within the app, or by deleting the app entirely. I do not hold any personal data on my servers.",
   "privacy.rights.text3_prefix":
-    "For analytics data, the anonymization performed by TelemetryDeck means we cannot identify or retrieve data relating to a specific individual. If you have questions or wish to exercise your rights, contact us at ",
-  "privacy.rights.text3_suffix": " and we will do our best to assist.",
+    "For analytics data, the anonymization performed by TelemetryDeck means I cannot identify or retrieve data relating to a specific individual. If you have questions or wish to exercise your rights, contact me at ",
+  "privacy.rights.text3_suffix": " and I will do my best to assist.",
   "privacy.rights.authority_prefix":
-    "You also have the right to lodge a complaint with a supervisory authority. The relevant authority for us is the ",
+    "You also have the right to lodge a complaint with a supervisory authority. The relevant authority is the ",
   "privacy.rights.authority_name":
     "Medienanstalt Hamburg / Schleswig-Holstein (MA HSH)",
 
-  "privacy.dont.heading": "What we don't do",
-  "privacy.dont.account": "We don't require you to create an account",
+  "privacy.dont.heading": "What I don't do",
+  "privacy.dont.account": "I don't require you to create an account",
   "privacy.dont.collect":
-    "We don't collect your name, email, or any contact information through the app",
+    "I don't collect your name, email, or any contact information through the app",
   "privacy.dont.sell":
-    "We don't sell, share, or transfer your data to third parties",
-  "privacy.dont.ads": "We don't display ads",
+    "I don't sell, share, or transfer your data to third parties",
+  "privacy.dont.ads": "I don't display ads",
   "privacy.dont.tracking":
-    "We don't use tracking pixels, cookies, or fingerprinting",
-  "privacy.dont.location": "We don't collect location data",
+    "I don't use tracking pixels, cookies, or fingerprinting",
+  "privacy.dont.location": "I don't collect location data",
 
   "privacy.iap.heading": "In-app purchases",
   "privacy.iap.text":
-    "Crema may offer in-app purchases via the App Store. These transactions are handled entirely by Apple. We do not receive your payment information, billing address, or Apple ID.",
+    "Crema may offer in-app purchases via the App Store. These transactions are handled entirely by Apple. I do not receive your payment information, billing address, or Apple ID.",
 
   "privacy.changes.heading": "Changes to this policy",
   "privacy.changes.text":
-    "We may update this privacy policy from time to time. If we make significant changes, we'll note the update date at the top of this page.",
+    "I may update this privacy policy from time to time. If I make significant changes, I'll note the update date at the top of this page.",
 
   "privacy.contact.heading": "Contact",
   "privacy.contact.text_prefix":
@@ -194,11 +194,11 @@ export default {
   "imprint.disclaimers": "Liability and intellectual property notices",
   "imprint.links_heading": "External links:",
   "imprint.links_text":
-    "The content of external websites to which we directly or indirectly refer is outside our area of responsibility and we do not adopt it as our own. We accept no responsibility for any content or disadvantages arising from the use of information available on linked websites.",
+    "The content of external websites to which I directly or indirectly refer is outside my area of responsibility and I do not adopt it as my own. I accept no responsibility for any content or disadvantages arising from the use of information available on linked websites.",
   "imprint.copyright_heading": "Copyright and trademark rights:",
   "imprint.copyright_text":
-    "All content displayed on this website, such as texts, photographs, graphics, brands and trademarks are protected by the respective intellectual property rights (copyright, trademark rights). Use, reproduction, etc. are subject to our rights or those of the respective authors or rights holders.",
+    "All content displayed on this website, such as texts, photographs, graphics, brands and trademarks are protected by the respective intellectual property rights (copyright, trademark rights). Use, reproduction, etc. are subject to my rights or those of the respective authors or rights holders.",
   "imprint.violations_heading": "Notice of legal violations:",
   "imprint.violations_text":
-    "If you notice any legal violations within our website, please inform us. We will remove unlawful content and links immediately upon becoming aware of them.",
+    "If you notice any legal violations within this website, please inform me. I will remove unlawful content and links immediately upon becoming aware of them.",
 } as const;

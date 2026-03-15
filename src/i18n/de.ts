@@ -40,7 +40,7 @@ export default {
   "privacy_callout.heading": "Deine Daten bleiben auf deinem Gerät.",
   "privacy_callout.text":
     "Keine Accounts. Keine Werbung. Crema speichert alles lokal,\ndeine Brew-History verlässt nie dein Handy.",
-  "privacy_callout.telemetry_prefix": "Wir verwenden ",
+  "privacy_callout.telemetry_prefix": "Crema verwendet ",
   "privacy_callout.telemetry_link": "TelemetryDeck",
   "privacy_callout.telemetry_suffix":
     " für anonyme, datenschutzfreundliche Analytik — persönliche Daten werden nie erhoben.",
@@ -49,22 +49,22 @@ export default {
   // Landing – Notify
   "notify.heading": "Sei unter den Ersten.",
   "notify.text":
-    "Wir rollen Crema an eine kleine Gruppe Espresso-Nerds via TestFlight aus. Schreib uns und wir melden uns, wenn du dran bist.",
+    "Ich rolle Crema zunächst an eine kleine Gruppe Espresso-Nerds via TestFlight aus. Schreib mir und ich melde mich, wenn di dram nost.",
   "notify.cta": "TestFlight-Zugang anfragen",
-  "notify.disclaimer": "Kein Spam. Nur eine einmalige Einladung, wenn wir soweit sind.",
+  "notify.disclaimer": "Kein Spam. Nur eine einmalige Einladung, wenn die App soweit ist.",
 
   // Support page
   "support.title": "Support — Crema",
   "support.heading": "Support",
   "support.intro":
-    "Crema wird von einer Person entwickelt. Wenn etwas nicht stimmt, will ich davon erfahren.",
+    "Crema wird von einem Indie-Entwickler betrieben. Wenn etwas nicht stimmt, will ich davon erfahren.",
   "support.contact.heading": "Kontakt",
   "support.contact.text":
     "Für Bug-Reports, Feature-Wünsche oder allgemeine Fragen, schreib mir direkt:",
   "support.faq.heading": "Häufige Fragen",
   "support.faq.data_storage.q": "Wo werden meine Daten gespeichert?",
   "support.faq.data_storage.a":
-    "Alles liegt auf deinem Gerät. Crema nutzt Apples SwiftData für lokale Speicherung. Deine Brew-History gehört dir. Wir arbeiten aber an einem optionalen CloudKit-Sync-Feature!",
+    "Alles liegt auf deinem Gerät. Crema nutzt Apples SwiftData für lokale Speicherung. Deine Brew-History gehört dir. Ich arbeite aber an einem optionalen CloudKit-Sync-Feature!",
   "support.faq.export.q": "Kann ich meine Daten exportieren?",
   "support.faq.export.a":
     "Ja! Gehe in die Einstellungen von Crema und drücke den Export-Button. Das erstellt eine JSON-Datei mit all deinen Bohnen und Brews. Exporte haben eine .crema-Dateiendung, was den Import erleichtert. Wenn du die Daten woanders importieren willst, ändere einfach die Endung zu .json — ein weit unterstütztes Dateiformat.",
@@ -86,18 +86,18 @@ export default {
 
   "privacy.short.heading": "Die Kurzfassung",
   "privacy.short.text":
-    "Crema ist eine Kaffee-Tracking-App, die alle deine Daten lokal auf deinem Gerät speichert. Wir haben keine Accounts, synchronisieren nicht in die Cloud und erheben keine persönlichen Daten. Wir nutzen datenschutzfreundliche Analytik, um die App-Nutzung aggregiert zu verstehen — mehr nicht. Diese Website wird in Deutschland selbst gehostet und speichert minimale Server-Logs zur Sicherheit, die nach 7 Tagen automatisch gelöscht werden.",
+    "Crema ist eine Kaffee-Tracking-App, die alle deine Daten lokal auf deinem Gerät speichert. Es gibt keine Accounts, synchronisieren nicht in die Cloud und erheben keine persönlichen Daten. Ich nutze datenschutzfreundliche Analytik, um die App-Nutzung aggregiert zu verstehen und die Benutzererfahrung zu verbessern — mehr nicht. Diese Website wird in Deutschland selbst gehostet und speichert minimale Server-Logs zur Sicherheit, die nach 7 Tagen automatisch gelöscht werden.",
 
-  "privacy.who.heading": "Wer wir sind",
+  "privacy.who.heading": "Wer dahinter steckt",
   "privacy.who.text":
     "Der Verantwortliche gemäß Art. 4 Nr. 7 der Datenschutz-Grundverordnung (DSGVO) ist",
-  "privacy.who.contact_prefix": "Du erreichst uns unter ",
+  "privacy.who.contact_prefix": "Du erreichst mich unter ",
 
   "privacy.device.heading": "Auf deinem Gerät gespeicherte Daten",
   "privacy.device.text1":
     "Alle Brew-Logs, Bohnen-Bibliothekseinträge, Mahlgrad-Einstellungen, Rezepte und Präferenzen werden lokal auf deinem iPhone mit Apples SwiftData-Framework gespeichert. Diese Daten verlassen dein Gerät nie, es sei denn, du entscheidest dich bewusst zum Teilen (z.B. das Teilen einer Brew-Card oder eines Rezepts mit Freunden).",
   "privacy.device.text2":
-    "Wir haben keinen Zugriff auf deine Brew-Daten. Wenn du die App löschst, werden deine Daten dauerhaft entfernt.",
+    "Ich habe keinen Zugriff auf deine Brew-Daten. Wenn du die App löschst, werden deine Daten dauerhaft entfernt.",
 
   "privacy.website.heading": "Website",
   "privacy.website.text":
@@ -112,7 +112,7 @@ export default {
   "privacy.website.masking":
     "Deine IP-Adresse wird teilweise maskiert, bevor sie auf die Festplatte geschrieben wird — konkret werden die letzten 16 Bit von IPv4-Adressen und die letzten 96 Bit von IPv6-Adressen entfernt. Das bedeutet, dass deine vollständige IP-Adresse nie auf unserem Server gespeichert wird.",
   "privacy.website.legal":
-    "Diese Daten werden auf Grundlage unseres berechtigten Interesses (Art. 6 Abs. 1 lit. f DSGVO) an der Aufrechterhaltung der Sicherheit und Verfügbarkeit unserer Website verarbeitet. Server-Logs werden nach 7 Tagen automatisch gelöscht. Wir verwenden keine Cookies, Tracking-Skripte oder Analytik auf der Website selbst.",
+    "Diese Daten werden auf Grundlage unseres berechtigten Interesses (Art. 6 Abs. 1 lit. f DSGVO) an der Aufrechterhaltung der Sicherheit und Verfügbarkeit unserer Website verarbeitet. Server-Logs werden nach 7 Tagen automatisch gelöscht. Ich verwende keine Cookies, Tracking-Skripte oder Analytik auf der Website selbst.",
 
   "privacy.analytics.heading": "Analytik",
   "privacy.analytics.text":
@@ -135,13 +135,13 @@ export default {
 
   "privacy.legal_basis.heading": "Rechtsgrundlage der Verarbeitung",
   "privacy.legal_basis.text1":
-    "Die oben beschriebenen Analytik-Daten werden auf Grundlage unseres berechtigten Interesses (Art. 6 Abs. 1 lit. f DSGVO) verarbeitet, die App-Nutzung zu verstehen und zu verbessern. Wir haben festgestellt, dass dieses Interesse deine Rechte und Freiheiten nicht überwiegt, da die Daten anonymisiert sind, keine persönlichen Informationen erhoben werden und TelemetryDeck standardmäßig datenschutzfreundlich konzipiert ist.",
+    "Die oben beschriebenen Analytik-Daten werden auf Grundlage unseres berechtigten Interesses (Art. 6 Abs. 1 lit. f DSGVO) verarbeitet, die App-Nutzung zu verstehen und zu verbessern. Ich haben festgestellt, dass dieses Interesse deine Rechte und Freiheiten nicht überwiegt, da die Daten anonymisiert sind, keine persönlichen Informationen erhoben werden und TelemetryDeck standardmäßig datenschutzfreundlich konzipiert ist.",
   "privacy.legal_basis.text2":
     "Auf deinem Gerät gespeicherte Daten werden von uns nicht verarbeitet und erfordern daher keine Rechtsgrundlage nach der DSGVO.",
 
   "privacy.retention.heading": "Datenspeicherung",
   "privacy.retention.text1":
-    "Auf deinem Gerät gespeicherte Daten bleiben bestehen, bis du die App löschst oder die Daten manuell löschst. Wir haben keinen Zugriff auf diese Daten und können sie nicht in deinem Auftrag löschen.",
+    "Auf deinem Gerät gespeicherte Daten bleiben bestehen, bis du die App löschst oder die Daten manuell löschst. Ich habe keinen Zugriff auf diese Daten und kann sie nicht in deinem Auftrag löschen.",
   "privacy.retention.text2_prefix":
     "An TelemetryDeck gesendete Analytik-Daten werden gemäß ",
   "privacy.retention.text2_link":
@@ -153,39 +153,39 @@ export default {
   "privacy.rights.text1":
     "Nach der DSGVO hast du das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung oder Übertragung deiner personenbezogenen Daten sowie das Recht auf Widerspruch gegen die Verarbeitung. Du hast auch das Recht, nicht einer ausschließlich automatisierten Entscheidungsfindung unterworfen zu werden.",
   "privacy.rights.text2":
-    "In der Praxis übst du die meisten dieser Rechte direkt aus, da alle Brew-Daten lokal auf deinem Gerät gespeichert sind — indem du deine Daten in der App ansiehst, bearbeitest oder löschst, oder die App vollständig löschst. Wir speichern keine personenbezogenen Daten auf unseren Servern.",
+    "In der Praxis übst du die meisten dieser Rechte direkt aus, da alle Brew-Daten lokal auf deinem Gerät gespeichert sind — indem du deine Daten in der App ansiehst, bearbeitest oder löschst, oder die App vollständig löschst. Ich speichere keine personenbezogenen Daten auf meinen Servern.",
   "privacy.rights.text3_prefix":
-    "Für Analytik-Daten bedeutet die von TelemetryDeck durchgeführte Anonymisierung, dass wir keine Daten zu einer bestimmten Person identifizieren oder abrufen können. Bei Fragen oder zur Ausübung deiner Rechte kontaktiere uns unter ",
+    "Für Analytik-Daten bedeutet die von TelemetryDeck durchgeführte Anonymisierung, dass ich keine Daten zu einer bestimmten Person identifizieren oder abrufen kann. Bei Fragen oder zur Ausübung deiner Rechte kontaktiere mich unter ",
   "privacy.rights.text3_suffix":
-    " und wir werden unser Bestes tun, um zu helfen.",
+    " und ich werde mein Bestes tun, um dir helfen.",
   "privacy.rights.authority_prefix":
-    "Du hast auch das Recht, eine Beschwerde bei einer Aufsichtsbehörde einzureichen. Die für uns zuständige Behörde ist die ",
+    "Du hast auch das Recht, eine Beschwerde bei einer Aufsichtsbehörde einzureichen. Die für zuständige Behörde ist die ",
   "privacy.rights.authority_name":
     "Medienanstalt Hamburg / Schleswig-Holstein (MA HSH)",
 
-  "privacy.dont.heading": "Was wir nicht tun",
+  "privacy.dont.heading": "Was die App nicht tut",
   "privacy.dont.account":
-    "Wir verlangen nicht, dass du ein Konto erstellst",
+    "Du brauchst kein Konto.",
   "privacy.dont.collect":
-    "Wir erheben nicht deinen Namen, deine E-Mail-Adresse oder andere Kontaktdaten über die App",
+    "Die App erhebt weder deinen Namen, deine E-Mail-Adresse noch andere Kontaktdaten.",
   "privacy.dont.sell":
-    "Wir verkaufen, teilen oder übertragen deine Daten nicht an Dritte",
-  "privacy.dont.ads": "Wir zeigen keine Werbung an",
+    "Die App verkauft, teilt oder überträgt deine Daten nicht an Dritte",
+  "privacy.dont.ads": "Ich zeigen keine Werbung an",
   "privacy.dont.tracking":
-    "Wir verwenden keine Tracking-Pixel, Cookies oder Fingerprinting",
-  "privacy.dont.location": "Wir erheben keine Standortdaten",
+    "Die App verwendet keine Tracking-Pixel, Cookies oder Fingerprinting",
+  "privacy.dont.location": "Die App erhebt keine Standortdaten",
 
   "privacy.iap.heading": "In-App-Käufe",
   "privacy.iap.text":
-    "Crema bietet möglicherweise In-App-Käufe über den App Store an. Diese Transaktionen werden vollständig von Apple abgewickelt. Wir erhalten weder deine Zahlungsinformationen noch deine Rechnungsadresse oder Apple ID.",
+    "Crema bietet möglicherweise In-App-Käufe über den App Store an. Diese Transaktionen werden vollständig von Apple abgewickelt. Ich erhalte weder deine Zahlungsinformationen noch deine Rechnungsadresse oder Apple ID.",
 
   "privacy.changes.heading": "Änderungen dieser Richtlinie",
   "privacy.changes.text":
-    "Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Bei wesentlichen Änderungen vermerken wir das Aktualisierungsdatum oben auf dieser Seite.",
+    "Ich kann diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Bei wesentlichen Änderungen vermerke ich das Aktualisierungsdatum oben auf dieser Seite.",
 
   "privacy.contact.heading": "Kontakt",
   "privacy.contact.text_prefix":
-    "Fragen zu dieser Richtlinie oder wie Crema mit deinen Daten umgeht? Schreib uns an ",
+    "Fragen zu dieser Richtlinie oder wie Crema mit deinen Daten umgeht? Schreib mir an ",
 
   // Imprint page
   "imprint.title": "Impressum — Crema",
@@ -198,11 +198,11 @@ export default {
   "imprint.disclaimers": "Haftungs- und Schutzrechtshinweise",
   "imprint.links_heading": "Links auf fremde Webseiten:",
   "imprint.links_text":
-    "Die Inhalte fremder Webseiten, auf die wir direkt oder indirekt verweisen, liegen außerhalb unseres Verantwortungsbereiches und wir machen sie uns nicht zu Eigen. Für alle Inhalte und Nachteile, die aus der Nutzung der in den verlinkten Webseiten aufrufbaren Informationen entstehen, übernehmen wir keine Verantwortung.",
+    "Die Inhalte fremder Webseiten, auf die ich direkt oder indirekt verweise, liegen außerhalb meines Verantwortungsbereiches und ich machen sie uns nicht zu meinem Eigen. Für alle Inhalte und Nachteile, die aus der Nutzung der in den verlinkten Webseiten aufrufbaren Informationen entstehen, übernehmen ich keine Verantwortung.",
   "imprint.copyright_heading": "Urheberrechte und Markenrechte:",
   "imprint.copyright_text":
-    "Alle auf dieser Website dargestellten Inhalte, wie Texte, Fotografien, Grafiken, Marken und Warenzeichen sind durch die jeweiligen Schutzrechte (Urheberrechte, Markenrechte) geschützt. Die Verwendung, Vervielfältigung usw. unterliegen unseren Rechten oder den Rechten der jeweiligen Urheber bzw. Rechteinhaber.",
+    "Alle auf dieser Website dargestellten Inhalte, wie Texte, Fotografien, Grafiken, Marken und Warenzeichen sind durch die jeweiligen Schutzrechte (Urheberrechte, Markenrechte) geschützt. Die Verwendung, Vervielfältigung usw. unterliegen meinen Rechten oder den Rechten der jeweiligen Urheber bzw. Rechteinhaber.",
   "imprint.violations_heading": "Hinweise auf Rechtsverstöße:",
   "imprint.violations_text":
-    "Sollten Sie innerhalb unseres Internetauftritts Rechtsverstöße bemerken, bitten wir Sie uns auf diese hinzuweisen. Wir werden rechtswidrige Inhalte und Links nach Kenntnisnahme unverzüglich entfernen.",
+    "Sollten Sie innerhalb dieses Internetauftritts Rechtsverstöße bemerken, bitte ich Sie uns mich diese hinzuweisen. Ich werde rechtswidrige Inhalte und Links nach Kenntnisnahme unverzüglich entfernen.",
 } as const;
