@@ -1,0 +1,190 @@
+---
+import Base from "../../layouts/Base.astro";
+import { useTranslations } from "../../i18n/utils";
+const t = useTranslations(Astro.url);
+---
+
+<Base title={t("privacy.title")} description={t("privacy.short.text")}>
+	<div class="max-w-2xl mx-auto px-6 py-16 md:py-24">
+		<h1 class="font-display text-4xl text-espresso-900 mb-2">
+			{t("privacy.heading")}
+		</h1>
+		<p class="text-sm text-espresso-300 mb-12">{t("privacy.updated")}</p>
+
+		<div
+			class="prose prose-espresso space-y-8 text-espresso-600 leading-relaxed text-[15px]"
+		>
+			<section>
+				<h2 class="font-display text-xl text-espresso-800 mb-3">
+					{t("privacy.short.heading")}
+				</h2>
+				<p>{t("privacy.short.text")}</p>
+			</section>
+
+			<section>
+				<h2 class="font-display text-xl text-espresso-800 mb-3">
+					{t("privacy.who.heading")}
+				</h2>
+				<p>{t("privacy.who.text")}</p>
+				David Credo<br />Kronshagener Weg 60<br />24116 Kiel<br />
+				<p>
+					{t("privacy.who.contact_prefix")}<a
+						href="mailto:crema@credo.codes"
+						class="underline underline-offset-2 text-espresso-700 hover:text-espresso-500 transition-colors"
+						>crema@credo.codes</a
+					>.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="font-display text-xl text-espresso-800 mb-3">
+					{t("privacy.device.heading")}
+				</h2>
+				<p>{t("privacy.device.text1")}</p>
+				<p>{t("privacy.device.text2")}</p>
+			</section>
+
+			<section>
+				<h2 class="font-display text-xl text-espresso-800 mb-3">
+					{t("privacy.website.heading")}
+				</h2>
+				<p>{t("privacy.website.text")}</p>
+				<ul
+					class="list-disc list-inside space-y-1 ml-1 text-espresso-500"
+				>
+					<li>{t("privacy.website.list.ip")}</li>
+					<li>{t("privacy.website.list.date")}</li>
+					<li>{t("privacy.website.list.page")}</li>
+					<li>{t("privacy.website.list.ua")}</li>
+					<li>{t("privacy.website.list.referrer")}</li>
+					<li>{t("privacy.website.list.status")}</li>
+				</ul>
+				<p>{t("privacy.website.masking")}</p>
+				<p>{t("privacy.website.legal")}</p>
+			</section>
+
+			<section>
+				<h2 class="font-display text-xl text-espresso-800 mb-3">
+					{t("privacy.analytics.heading")}
+				</h2>
+				<p>
+					{t("privacy_callout.telemetry_prefix")}<a
+						href="https://telemetrydeck.com"
+						class="underline underline-offset-2 text-espresso-700 hover:text-espresso-500 transition-colors"
+						>TelemetryDeck</a
+					>{t("privacy.analytics.text")}
+				</p>
+				<p>{t("privacy.analytics.list_intro")}</p>
+				<ul
+					class="list-disc list-inside space-y-1 ml-1 text-espresso-500"
+				>
+					<li>{t("privacy.analytics.list.id")}</li>
+					<li>{t("privacy.analytics.list.events")}</li>
+					<li>{t("privacy.analytics.list.time")}</li>
+					<li>{t("privacy.analytics.list.device")}</li>
+				</ul>
+				<p>
+					{t("privacy.analytics.no_pii")}<a
+						href="https://github.com/TelemetryDeck/SwiftSDK"
+						class="underline underline-offset-2 text-espresso-700 hover:text-espresso-500 transition-colors"
+						>{t("privacy.analytics.opensource")}</a
+					>.
+				</p>
+				<p>
+					{t("privacy.analytics.location")}<a
+						href="https://telemetrydeck.com/privacy/"
+						class="underline underline-offset-2 text-espresso-700 hover:text-espresso-500 transition-colors"
+						>{t("privacy.analytics.td_policy")}</a
+					>.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="font-display text-xl text-espresso-800 mb-3">
+					{t("privacy.legal_basis.heading")}
+				</h2>
+				<p>{t("privacy.legal_basis.text1")}</p>
+				<p>{t("privacy.legal_basis.text2")}</p>
+			</section>
+
+			<section>
+				<h2 class="font-display text-xl text-espresso-800 mb-3">
+					{t("privacy.retention.heading")}
+				</h2>
+				<p>{t("privacy.retention.text1")}</p>
+				<p>
+					{t("privacy.retention.text2_prefix")}<a
+						href="https://telemetrydeck.com/privacy/"
+						class="underline underline-offset-2 text-espresso-700 hover:text-espresso-500 transition-colors"
+						>{t("privacy.retention.text2_link")}</a
+					>{t("privacy.retention.text2_suffix")}
+				</p>
+			</section>
+
+			<section>
+				<h2 class="font-display text-xl text-espresso-800 mb-3">
+					{t("privacy.rights.heading")}
+				</h2>
+				<p>{t("privacy.rights.text1")}</p>
+				<p>{t("privacy.rights.text2")}</p>
+				<p>
+					{t("privacy.rights.text3_prefix")}<a
+						href="mailto:crema@credo.codes"
+						class="underline underline-offset-2 text-espresso-700 hover:text-espresso-500 transition-colors"
+						>crema@credo.codes</a
+					>{t("privacy.rights.text3_suffix")}
+				</p>
+				<p>
+					{t("privacy.rights.authority_prefix")}<a
+						href="https://www.ma-hsh.de/"
+						class="underline underline-offset-2 text-espresso-700 hover:text-espresso-500 transition-colors"
+						>{t("privacy.rights.authority_name")}</a
+					>.
+				</p>
+			</section>
+
+			<section>
+				<h2 class="font-display text-xl text-espresso-800 mb-3">
+					{t("privacy.dont.heading")}
+				</h2>
+				<ul
+					class="list-disc list-inside space-y-1 ml-1 text-espresso-500"
+				>
+					<li>{t("privacy.dont.account")}</li>
+					<li>{t("privacy.dont.collect")}</li>
+					<li>{t("privacy.dont.sell")}</li>
+					<li>{t("privacy.dont.ads")}</li>
+					<li>{t("privacy.dont.tracking")}</li>
+					<li>{t("privacy.dont.location")}</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2 class="font-display text-xl text-espresso-800 mb-3">
+					{t("privacy.iap.heading")}
+				</h2>
+				<p>{t("privacy.iap.text")}</p>
+			</section>
+
+			<section>
+				<h2 class="font-display text-xl text-espresso-800 mb-3">
+					{t("privacy.changes.heading")}
+				</h2>
+				<p>{t("privacy.changes.text")}</p>
+			</section>
+
+			<section>
+				<h2 class="font-display text-xl text-espresso-800 mb-3">
+					{t("privacy.contact.heading")}
+				</h2>
+				<p>
+					{t("privacy.contact.text_prefix")}<a
+						href="mailto:crema@credo.codes"
+						class="underline underline-offset-2 text-espresso-700 hover:text-espresso-500 transition-colors"
+						>crema@credo.codes</a
+					>.
+				</p>
+			</section>
+		</div>
+	</div>
+</Base>

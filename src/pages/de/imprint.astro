@@ -1,0 +1,72 @@
+---
+import Base from "../../layouts/Base.astro";
+import { useTranslations } from "../../i18n/utils";
+const t = useTranslations(Astro.url);
+---
+
+<Base title={t("imprint.title")} description={t("imprint.heading")}>
+	<div class="max-w-2xl mx-auto px-6 py-16 md:py-24">
+		<h1 class="font-display text-4xl text-espresso-900 mb-12">
+			{t("imprint.heading")}
+		</h1>
+
+		<div class="space-y-8 text-[15px] text-espresso-600 leading-relaxed">
+			<section>
+				<h2 class="font-display text-xl text-espresso-800 mb-3">
+					{t("imprint.provider")}
+				</h2>
+				<p>
+					David Credo<br />
+					Kronshagener Weg 60<br />
+					24116 Kiel<br />
+					Deutschland
+				</p>
+			</section>
+
+			<section>
+				<h2 class="font-display text-xl text-espresso-800 mb-3">
+					{t("imprint.contact")}
+				</h2>
+				<p>
+					{t("imprint.email")}: <a
+						href="mailto:crema@credo.codes"
+						class="underline underline-offset-2 text-espresso-700 hover:text-espresso-500 transition-colors"
+						>crema@credo.codes</a
+					><br />
+					{t("imprint.phone")}: 0431 1286 2382
+				</p>
+			</section>
+
+			<section>
+				<h2 class="font-display text-xl text-espresso-800 mb-3">
+					{t("imprint.responsible")}
+				</h2>
+				<p>David Credo</p>
+			</section>
+
+			<section>
+				<h2 class="font-display text-xl text-espresso-800 mb-3">
+					{t("imprint.disclaimers")}
+				</h2>
+				<p>
+					<strong class="text-espresso-800"
+						>{t("imprint.links_heading")}</strong
+					>
+					{" "}{t("imprint.links_text")}
+				</p>
+				<p class="mt-4">
+					<strong class="text-espresso-800"
+						>{t("imprint.copyright_heading")}</strong
+					>
+					{" "}{t("imprint.copyright_text")}
+				</p>
+				<p class="mt-4">
+					<strong class="text-espresso-800"
+						>{t("imprint.violations_heading")}</strong
+					>
+					{" "}{t("imprint.violations_text")}
+				</p>
+			</section>
+		</div>
+	</div>
+</Base>

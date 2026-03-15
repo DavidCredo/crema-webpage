@@ -1,43 +1,38 @@
-# Astro Starter Kit: Minimal
+# Crema — Website
 
-```sh
-bun create astro@latest -- --template minimal
+Minimal marketing site for [Crema](https://crema.app), the espresso tracking app for iOS.
+
+Built with [Astro](https://astro.build) + [Tailwind CSS](https://tailwindcss.com).
+
+## Pages
+
+- `/` — Landing page (hero, features, TestFlight CTA)
+- `/privacy` — Privacy policy (required for App Store)
+- `/support` — Support & FAQ (required for App Store)
+
+## Getting started
+
+```bash
+npm install
+npm run dev        # → http://localhost:4321
+npm run build      # → static output in ./dist
+npm run preview    # → preview the build
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## TODO before App Store submission
 
-## 🚀 Project Structure
+- [ ] Replace `hello@crema.app` with your real email
+- [ ] Replace `https://threads.net/@yourhandle` with your Threads URL
+- [ ] Replace `https://crema.app` in `astro.config.mjs` with your actual domain
+- [ ] Add app screenshots to `/public/images/` and reference in the hero section
+- [ ] (Optional) Add an email collection form (Buttondown, Mailchimp, etc.)
+- [ ] Update the "Last updated" date in the privacy policy if you make changes
+- [ ] Replace "David" in the footer copyright with your preferred name/entity
 
-Inside of your Astro project, you'll see the following folders and files:
+## App Store links
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+When submitting to App Store Connect, use these URLs:
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- **Privacy Policy URL**: `https://yourdomain.com/privacy`
+- **Support URL**: `https://yourdomain.com/support`
+- **Marketing URL** (optional): `https://yourdomain.com`

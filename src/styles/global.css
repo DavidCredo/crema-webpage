@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@theme {
+  /* Cream palette */
+  --color-cream-50: #FFFDF7;
+  --color-cream-100: #FFF9E8;
+  --color-cream-200: #FFF0C9;
+  --color-cream-300: #FFE4A0;
+  --color-cream-400: #FFD470;
+  --color-cream-500: #F5C34B;
+ 
+  /* Espresso palette */
+  --color-espresso-50: #F5F0EB;
+  --color-espresso-100: #E8DED3;
+  --color-espresso-200: #D4C4B0;
+  --color-espresso-300: #B89E82;
+  --color-espresso-400: #9C7B5C;
+  --color-espresso-500: #7A5C3E;
+  --color-espresso-600: #5C4330;
+  --color-espresso-700: #3E2D20;
+  --color-espresso-800: #2A1E15;
+  --color-espresso-900: #1A120D;
+  --color-espresso-950: #0F0A07;
+
+  --color-brand: #E2682B;
+  --color-brand-hover: #FF7531;
+ 
+  /* Typography */
+  --font-display: Georgia, serif;
+  --font-body: system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}

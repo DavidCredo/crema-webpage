@@ -1,0 +1,132 @@
+---
+import "../styles/global.css";
+import AppIcon from "../../public/favicon.png";
+import { useTranslations, getLangFromUrl, localePath } from "../i18n/utils";
+import LanguageSwitcher from "../components/LanguageSwitcher.astro";
+import Image from "astro/components/Image.astro";
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const t = useTranslations(Astro.url);
+const lang = getLangFromUrl(Astro.url);
+const { title, description = t("site.description") } = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content={description} />
+		<title>{title}</title>
+		<link rel="icon" type="image/png" href="/favicon.png" />
+
+		<!-- Open Graph -->
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:type" content="website" />
+
+		<link
+			rel="alternate"
+			hreflang="en"
+			href={`https://crema.credo.codes${localePath(Astro.url.pathname.replace(/^\/(de)/, ""), "en")}`}
+		/>
+		<link
+			rel="alternate"
+			hreflang="de"
+			href={`https://crema.credo.codes${localePath(Astro.url.pathname.replace(/^\/(de)/, ""), "de")}`}
+		/>
+		<link
+			rel="alternate"
+			hreflang="x-default"
+			href={`https://crema.credo.codes${localePath(Astro.url.pathname.replace(/^\/(de)/, ""), "en")}`}
+		/>
+	</head>
+
+	<body class="bg-cream-50 text-espresso-800 font-body antialiased">
+		<!-- Navigation -->
+		<nav
+			class="fixed top-0 w-full z-50 bg-cream-50/80 backdrop-blur-lg border-b border-espresso-100/50"
+		>
+			<div
+				class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between"
+			>
+				<a
+					href={localePath("/", lang)}
+					class="flex items-center gap-2.5 group"
+				>
+					<div
+						class="w-8 h-8 bg-espresso-700 rounded-lg flex items-center justify-center group-hover:bg-espresso-600 transition-colors"
+					>
+						<Image src={AppIcon} alt="App Icon" />
+					</div>
+					<span class="font-display text-xl text-espresso-800"
+						>Crema</span
+					>
+				</a>
+				<div
+					class="flex items-center gap-6 text-sm font-medium text-espresso-500"
+				>
+					<a
+						href={localePath("/privacy", lang)}
+						class="hover:text-espresso-800 transition-colors"
+						>{t("nav.privacy")}</a
+					>
+					<a
+						href={localePath("/support", lang)}
+						class="hover:text-espresso-800 transition-colors"
+						>{t("nav.support")}</a
+					>
+					<LanguageSwitcher />
+				</div>
+			</div>
+		</nav>
+
+		<!-- Main Content -->
+		<main class="pt-[72px]">
+			<slot />
+		</main>
+
+		<!-- Footer -->
+		<footer class="border-t border-espresso-100/50 bg-cream-50">
+			<div class="max-w-5xl mx-auto px-6 py-12">
+				<div
+					class="flex flex-col sm:flex-row items-center justify-between gap-6"
+				>
+					<div class="flex items-center gap-2 text-espresso-400">
+						<span class="font-display text-lg">Crema</span>
+						<span class="text-espresso-200">·</span>
+						<span class="text-sm">{t("footer.tagline")}</span>
+					</div>
+					<div
+						class="flex items-center gap-6 text-sm text-espresso-400"
+					>
+						<a
+							href={localePath("/privacy", lang)}
+							class="hover:text-espresso-700 transition-colors"
+							>{t("nav.privacy")}</a
+						>
+						<a
+							href={localePath("/imprint", lang)}
+							class="hover:text-espresso-700 transition-colors"
+							>{t("nav.imprint")}</a
+						>
+						<a
+							href={localePath("/support", lang)}
+							class="hover:text-espresso-700 transition-colors"
+							>{t("nav.support")}</a
+						>
+					</div>
+				</div>
+				<p
+					class="text-center sm:text-left text-xs text-espresso-300 mt-6"
+				>
+					{t("footer.copyright")}
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>

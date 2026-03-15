@@ -1,0 +1,128 @@
+---
+import Base from "../../layouts/Base.astro";
+import { useTranslations, getLangFromUrl } from "../../i18n/utils";
+const t = useTranslations(Astro.url);
+const lang = getLangFromUrl(Astro.url);
+---
+
+<Base title={t("site.title")}>
+	<section class="relative overflow-hidden">
+		<div class="max-w-5xl mx-auto px-6 pt-24 pb-20 md:pt-32 md:pb-28">
+			<div class="max-w-2xl">
+				<div
+					class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-espresso-50 border border-espresso-100 text-xs font-medium text-espresso-500 mb-8"
+				>
+					<span
+						class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse"
+					></span>
+					{t("hero.badge")}
+				</div>
+				<h1
+					class="font-display text-5xl md:text-6xl lg:text-7xl text-espresso-900 leading-[1.05] mb-6"
+				>
+					{t("hero.title.line1")}<br />{t("hero.title.line2")}
+				</h1>
+				<p
+					class="text-lg md:text-xl text-espresso-400 leading-relaxed max-w-lg mb-10"
+				>
+					{t("hero.subtitle")}
+				</p>
+				<div>
+					<a
+						href="#notify"
+						class="px-6 py-3.5 bg-brand text-cream-100 rounded-xl text-sm font-medium hover:bg-brand-hover transition-colors shadow-lg shadow-espresso-800/10"
+					>
+						{t("hero.cta")}
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-espresso-700 text-cream-100 relative overflow-hidden">
+		<div class="max-w-5xl mx-auto px-6 py-20 md:py-28 relative">
+			<h2 class="font-display text-3xl md:text-4xl mb-4">
+				{t("features.heading")}
+			</h2>
+			<p class="text-espresso-300 text-lg max-w-lg mb-16">
+				{t("features.subheading")}
+			</p>
+			<div class="grid md:grid-cols-3 gap-12 md:gap-8">
+				<div class="group">
+					<h3 class="font-display text-xl mb-2">
+						{t("features.shot.title")}
+					</h3>
+					<p class="text-espresso-300 text-sm leading-relaxed">
+						{t("features.shot.description")}
+					</p>
+				</div>
+				<div class="group">
+					<h3 class="font-display text-xl mb-2">
+						{t("features.beans.title")}
+					</h3>
+					<p class="text-espresso-300 text-sm leading-relaxed">
+						{t("features.beans.description")}
+					</p>
+				</div>
+				<div class="group">
+					<h3 class="font-display text-xl mb-2">
+						{t("features.dial.title")}
+					</h3>
+					<p class="text-espresso-300 text-sm leading-relaxed">
+						{t("features.dial.description.before")}<i
+							>{t("features.dial.description.emphasis")}</i
+						>{t("features.dial.description.after")}
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="max-w-5xl mx-auto px-6 py-20 md:py-28">
+		<div class="max-w-2xl mx-auto text-center">
+			<h2
+				class="font-display text-3xl md:text-4xl text-espresso-900 mb-4"
+			>
+				{t("privacy_callout.heading")}
+			</h2>
+			<p
+				class="text-espresso-400 text-lg leading-relaxed mb-4"
+				set:html={t("privacy_callout.text").replace("\n", "<br />")}
+			/>
+			<p class="text-espresso-300 text-sm">
+				{t("privacy_callout.telemetry_prefix")}<a
+					href="https://telemetrydeck.com"
+					class="underline underline-offset-2 hover:text-espresso-500 transition-colors"
+					>{t("privacy_callout.telemetry_link")}</a
+				>{t("privacy_callout.telemetry_suffix")}
+				<a
+					href={lang === "en" ? "/privacy" : `/${lang}/privacy`}
+					class="underline underline-offset-2 hover:text-espresso-500 transition-colors"
+					>{t("privacy_callout.policy_link")}</a
+				>
+			</p>
+		</div>
+	</section>
+
+	<section id="notify" class="bg-espresso-50 border-y border-espresso-100/50">
+		<div class="max-w-5xl mx-auto px-6 py-16 text-center">
+			<h2
+				class="font-display text-2xl md:text-3xl text-espresso-900 mb-3"
+			>
+				{t("notify.heading")}
+			</h2>
+			<p class="text-espresso-400 mb-8 max-w-md mx-auto">
+				{t("notify.text")}
+			</p>
+			<a
+				href="mailto:crema@credo.codes?subject=TestFlight%20invite%20please!"
+				class="inline-flex items-center gap-2 px-6 py-3.5 bg-espresso-800 text-cream-100 rounded-xl text-sm font-medium hover:bg-espresso-700 transition-colors shadow-lg shadow-espresso-800/10"
+			>
+				{t("notify.cta")}
+			</a>
+			<p class="text-xs text-espresso-300 mt-4">
+				{t("notify.disclaimer")}
+			</p>
+		</div>
+	</section>
+</Base>

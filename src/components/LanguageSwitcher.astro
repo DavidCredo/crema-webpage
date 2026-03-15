@@ -1,0 +1,35 @@
+---
+import { languages, getLangFromUrl } from "../i18n/utils";
+
+const currentLang = getLangFromUrl(Astro.url);
+
+// Build the equivalent path in the other language
+const pathname = Astro.url.pathname;
+
+function getAlternatePath(targetLang: string): string {
+	// Strip current locale prefix if present
+	const stripped = pathname.replace(/^\/(en|de)(\/|$)/, "/");
+	if (targetLang === "en") return stripped || "/";
+	return `/${targetLang}${stripped === "/" ? "" : stripped}`;
+}
+---
+
+<div class="flex items-center gap-1 text-sm text-espresso-400">
+	{
+		Object.entries(languages).map(([lang, label], i) => (
+			<>
+				{i > 0 && <span class="text-espresso-200">·</span>}
+				{lang === currentLang ? (
+					<span class="text-espresso-700 font-medium">{label}</span>
+				) : (
+					<a
+						href={getAlternatePath(lang)}
+						class="hover:text-espresso-700 transition-colors"
+					>
+						{label}
+					</a>
+				)}
+			</>
+		))
+	}
+</div>
