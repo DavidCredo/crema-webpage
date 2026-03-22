@@ -13,12 +13,12 @@ export default {
   "footer.copyright": `© ${new Date().getFullYear()} David Credo. Alle Rechte vorbehalten.`,
 
   // Landing – Hero
-  "hero.badge": "Bald im App Store",
+  "hero.badge": "Jetzt im App Store verfügbar",
   "hero.title.line1": "Jeder Shot",
   "hero.title.line2": "erzählt eine Geschichte.",
   "hero.subtitle":
     "Crema hilft dir, Espresso-Shots zu loggen, deine Bohnen zu verwalten und den perfekten Brew zu finden — Shot für Shot.",
-  "hero.cta": "Benachrichtige mich",
+  "hero.cta": "Im App Store laden",
 
   // Landing – Features
   "features.heading": "Gebaut für das Ritual.",
@@ -47,11 +47,10 @@ export default {
   "privacy_callout.policy_link": "Unsere Datenschutzerklärung lesen →",
 
   // Landing – Notify
-  "notify.heading": "Sei unter den Ersten.",
+  "notify.heading": "Hol dir Crema.",
   "notify.text":
-    "Ich rolle Crema zunächst an eine kleine Gruppe Espresso-Nerds via TestFlight aus. Schreib mir und ich melde mich, wenn du dran bist.",
-  "notify.cta": "TestFlight-Zugang anfragen",
-  "notify.disclaimer": "Kein Spam. Nur eine einmalige Einladung, wenn die App soweit ist.",
+    "Tracke deine Espresso-Shots, baue deine Bohnen-Bibliothek auf und finde deinen perfekten Brew. Jetzt im App Store verfügbar.",
+  "notify.cta": "Im App Store laden",
 
   // Support page
   "support.title": "Support — Crema",

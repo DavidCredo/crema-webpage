@@ -28,11 +28,8 @@ const lang = getLangFromUrl(Astro.url);
 					{t("hero.subtitle")}
 				</p>
 				<div>
-					<a
-						href="#notify"
-						class="px-6 py-3.5 bg-brand text-cream-100 rounded-xl text-sm font-medium hover:bg-brand-hover transition-colors shadow-lg shadow-espresso-800/10"
-					>
-						{t("hero.cta")}
+					<a href="https://apps.apple.com/us/app/crema/id6758616276">
+						<img src="/Download_on_the_App_Store_Badge.svg" alt={t("hero.cta")} class="h-[40px]" />
 					</a>
 				</div>
 			</div>
@@ -114,15 +111,9 @@ const lang = getLangFromUrl(Astro.url);
 			<p class="text-espresso-400 mb-8 max-w-md mx-auto">
 				{t("notify.text")}
 			</p>
-			<a
-				href="mailto:crema@credo.codes?subject=TestFlight%20invite%20please!"
-				class="inline-flex items-center gap-2 px-6 py-3.5 bg-espresso-800 text-cream-100 rounded-xl text-sm font-medium hover:bg-espresso-700 transition-colors shadow-lg shadow-espresso-800/10"
-			>
-				{t("notify.cta")}
+			<a href="https://apps.apple.com/us/app/crema/id6758616276">
+				<img src="/Download_on_the_App_Store_Badge.svg" alt={t("notify.cta")} class="h-[40px] mx-auto" />
 			</a>
-			<p class="text-xs text-espresso-300 mt-4">
-				{t("notify.disclaimer")}
-			</p>
 		</div>
 	</section>
 </Base>
